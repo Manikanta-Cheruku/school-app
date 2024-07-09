@@ -14,7 +14,8 @@ const userSchema = new mongoose.Schema({
   password : {
     type : String,
     required : true
-  }
+  }, 
+  homeworks: [{type: mongoose.Schema.ObjectId, ref: "Homework"}]
 })
 
 

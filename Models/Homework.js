@@ -10,11 +10,12 @@ const homeworkSchema = new mongoose.Schema({
         required : true
     },
     date : {
-        type : date,
+        type : Date,
         required : true
     },
     userId : {
-        type: String,
+        type: mongoose.Schema.ObjectId,
+        ref: "User",
         required : true
     },
     subject : {
